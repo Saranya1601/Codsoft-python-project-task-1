@@ -48,7 +48,7 @@ def retrieve_database():
     for row in the_cursor.execute('select title from tasks'):    
         tasks.append(row[0])  
    
-if __name__ == "__main__":   
+if _name_ == "_main_":   
     guiWindow = Tk()   
     guiWindow.title("To-Do List ")  
     guiWindow.geometry("665x400+550+250")   
@@ -61,14 +61,14 @@ if __name__ == "__main__":
     
     tasks = []  
         
-    functions_frame = Frame(guiWindow, bg = "#8EE5EE") 
+    functions_frame = Frame(guiWindow, bg = "#9F2B68") 
     
     functions_frame.pack(side = "top", expand = True, fill = "both")  
  
     task_label = Label( functions_frame,text = "TO-DO-LIST \n Enter the Task Title:",  
         font = ("arial", "14", "bold"),  
-        background = "#8EE5EE", 
-        foreground="#FF6103"
+        background = "#9F2B68", 
+        foreground="#E6E6FA"
     )    
     task_label.place(x = 20, y = 30)  
         
